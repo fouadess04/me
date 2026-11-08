@@ -3,199 +3,1533 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Essaidi fouad</title>
+  <title>Essaidi Fouad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <div class="smooth-transition" id="transition-overlay"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
   <div class="stars"></div>
 
-  <header class="header">
-    <div class="logo">Essaidi Fouad</div>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="#about" class="logo">Essaidi Fouad</a>
     <nav class="nav">
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
   </header>
 
+  <!-- HERO SECTION (Original Cosmic Vibe — No Pill Badges) -->
   <section class="hero" id="about">
+    <div class="orbital-system" id="orbital-system"></div>
 
-    <div class="orbital-system">
-    </div>
-
-    <div class="hero-content">
+    <div class="hero-content" id="hero-content">
       <h1 class="hero-title">Dual-citizen</h1>
       <p class="hero-subtitle">of Pharmaceutical and Tech galaxies</p>
       <a href="#contact" class="cta-button">Contact</a>
     </div>
   </section>
 
+  <!-- MAIN SECTIONS -->
   <div class="sections">
+
+    <!-- ====================================================================
+         PROJECTS SECTION (BClass & SANAD with Audited Metrics + Light UI)
+         ==================================================================== -->
+    <section class="section" id="projects">
+      <div class="section-content">
+        <div class="section-header-block reveal">
+          <span class="section-eyebrow">01 // Production Systems</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Architecting high-reliability platforms at the intersection of higher education, clinical care, and applied AI. Interact directly with the embedded light-mode interfaces below.
+          </p>
+        </div>
+
+        <!-- Monochrome App Ecosystem Strip -->
+        <div class="app-logos-strip reveal">
+          <a href="#project-bclass" class="app-logo-card">
+            <div class="app-logo-box">
+              <img src="assets/logos/bclass-logo.svg" alt="BClass Logo" class="app-logo-img">
+            </div>
+            <div>
+              <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);">01 // EdTech &amp; AI</div>
+              <div style="font-size:1.05rem;font-weight:700;color:#ffffff;margin-top:2px;">BClass</div>
+              <div style="font-size:0.74rem;color:var(--text-secondary);">AI OS for Higher Education</div>
+            </div>
+          </a>
+
+          <a href="#project-sanad" class="app-logo-card">
+            <div class="app-logo-box">
+              <img src="assets/logos/sanad-logo.svg" alt="SANAD Logo" class="app-logo-img">
+            </div>
+            <div>
+              <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);">02 // Tele-Expertise</div>
+              <div style="font-size:1.05rem;font-weight:700;color:#ffffff;margin-top:2px;">SANAD</div>
+              <div style="font-size:0.74rem;color:var(--text-secondary);">Emergency Case-Routing Engine</div>
+            </div>
+          </a>
+
+          <a href="#project-tabib" class="app-logo-card">
+            <div class="app-logo-box">
+              <img src="assets/logos/tabib-mark.png" alt="TABIB Logo" class="app-logo-img">
+            </div>
+            <div>
+              <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);">03 // Desktop OS</div>
+              <div style="font-size:1.05rem;font-weight:700;color:#ffffff;margin-top:2px;">TABIB (طبيب)</div>
+              <div style="font-size:0.74rem;color:var(--text-secondary);">Offline Medical Practice OS</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-showcase">
+
+          <!-- ==============================================================
+               PROJECT 1: BCLASS — THE AI OPERATING SYSTEM FOR HIGHER EDUCATION
+               ============================================================== -->
+          <article class="project-block reveal" id="project-bclass">
+            <div class="project-header-bar">
+              <div class="project-title-row">
+                <div class="project-logo-box">
+                  <img src="assets/logos/bclass-logo.svg" alt="BClass Monochrome Logo" class="app-logo-img">
+                </div>
+                <div>
+                  <span class="project-index">01 // Founder, Solo Full-Stack Architect &amp; AI Engineer</span>
+                  <h3 class="project-name">BClass — AI OS for Higher Education</h3>
+                </div>
+              </div>
+              <a href="https://bigoviclass.com" target="_blank" rel="noopener" class="project-live-link">
+                bigoviclass.com ↗
+              </a>
+            </div>
+
+            <!-- Audited Production Metrics Strip (Blida 1) -->
+            <div class="metrics-strip">
+              <div class="metric-cell">
+                <span class="metric-value">655+</span>
+                <span class="metric-label">Students</span>
+                <span class="metric-sub">80–90%+ Blida 1 saturation</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">30.5%</span>
+                <span class="metric-label">DAU / MAU</span>
+                <span class="metric-sub">143 Peak DAU / 472 MAU</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">18,841+</span>
+                <span class="metric-label">Questions</span>
+                <span class="metric-sub">246 exams · 181 BNotes</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">954.1+ hrs</span>
+                <span class="metric-label">Study Time</span>
+                <span class="metric-sub">85,829+ tracked events</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">27,160+</span>
+                <span class="metric-label">Quiz Answers</span>
+                <span class="metric-sub">3,006 practice sessions</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">&gt;96%</span>
+                <span class="metric-label">Gross Margin</span>
+                <span class="metric-sub">0 DZD CAC · 95% reuse</span>
+              </div>
+            </div>
+
+            <div class="project-top-grid">
+              <!-- Left Column: BClass Concise Overview -->
+              <div class="project-info">
+                <p class="project-tagline">
+                  "The only education platform you'll need." Turning raw university lectures into an exam-aligned AI workspace — cutting study prep from 4+ hours to under 2 hours.
+                </p>
+
+                <div class="project-modules-list">
+                  <div class="module-item">
+                    <div class="module-title">A. BClass Classroom</div>
+                    <div class="module-desc">Centralized cohort hub with module-organized files, weighted GPA calculator, and live study checklists.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">B. BNotes &amp; BQS Engine</div>
+                    <div class="module-desc">Textbook-grade study guides synthesized from slides, past exams &amp; MESRS syllabus, scored for visual clarity.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">C. BClass-AI (B-AI)</div>
+                    <div class="module-desc">Curriculum-trained AI tutor providing instant, slide-cited explanations on any highlighted concept.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">D. Multi-Format Quizroom</div>
+                    <div class="module-desc">246+ official past exams across QCMs, open-ended CROQs, and clinical cases with cited explanations.</div>
+                  </div>
+                </div>
+
+                <div class="project-stack-line">
+                  <strong>Stack //</strong> Django · React &amp; React Native · Astro · Gemini OCR/LLM · PostgreSQL · OVHcloud · Cloudflare R2
+                </div>
+              </div>
+
+              <!-- Right Column: Inherited Astro BClass Interactive Light UI (CourseMockup.tsx + BNoteShowcase.astro + QuizShowcase.astro) -->
+              <div class="ui-embed-frame" id="bclass-ui-frame">
+                <div class="ui-embed-chrome">
+                  <div class="chrome-dots">
+                    <span class="chrome-dot red"></span>
+                    <span class="chrome-dot amber"></span>
+                    <span class="chrome-dot green"></span>
+                  </div>
+                  <div class="chrome-url">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>bigoviclass.com — Astro Light UI</span>
+                  </div>
+                  <div class="chrome-tabs" role="tablist">
+                    <button class="chrome-tab active" data-bclass-tab="courses" type="button">Courses</button>
+                    <button class="chrome-tab" data-bclass-tab="bnote" type="button">BNote Reader</button>
+                    <button class="chrome-tab" data-bclass-tab="quiz" type="button">B-AI Quiz</button>
+                  </div>
+                </div>
+
+                <!-- Inherited Astro BClass Host -->
+                <div class="bclass-astro-host">
+
+                  <!-- ========================================================
+                       PANE 1: EXACT CourseMockup.tsx INHERITED FROM ASTRO
+                       ======================================================== -->
+                  <div class="bclass-astro-pane active" id="bclass-pane-courses">
+                    <!-- Marquee Track (from CourseMockup.tsx) -->
+                    <div style="overflow:hidden;margin-bottom:14px;padding:4px 0;position:relative;">
+                      <div class="marquee-track" id="astro-course-marquee">
+                        <!-- Populated by main.js with exact CourseMockup.tsx coursesData.concat(coursesData) -->
+                      </div>
+                    </div>
+
+                    <!-- App Interactive Screen Mockup (from CourseMockup.tsx) -->
+                    <div class="app-mockup" id="astro-app-mockup" style="background-color:#f6fff6;border-color:#c8e6c9;">
+                      <!-- App Screen Header -->
+                      <div class="app-header" id="astro-app-header" style="background-color:#f6fff6;border-bottom-color:#c8e6c9;">
+                        <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1;">
+                          <button id="astro-course-back" type="button" style="display:none;padding:6px;border-radius:8px;border:1px solid #c8e6c9;color:#37913c;background:transparent;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                              <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                          </button>
+                          <div style="min-width:0;flex:1;">
+                            <h3 id="astro-header-title" style="font-weight:800;font-size:15px;color:#37913c;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                              My Courses
+                            </h3>
+                            <span id="astro-header-sub" style="font-size:12px;color:#5a6b5d;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                              BClass Interactive Demo
+                            </span>
+                          </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+                          <span id="astro-header-badge" style="font-size:12px;font-weight:700;padding:4px 10px;border-radius:9999px;background-color:#e0f7e0;color:#37913c;white-space:nowrap;">
+                            Live Preview
+                          </span>
+                        </div>
+                      </div>
+
+                      <!-- Courses / Materials Body (460px height matching CourseMockup.tsx) -->
+                      <div id="astro-course-body" class="custom-scroll" style="padding:16px 20px;height:450px;overflow-y:auto;">
+                        <!-- Populated dynamically by main.js (Courses View vs Materials View) -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ========================================================
+                       PANE 2: EXACT BNoteShowcase.astro INHERITED FROM ASTRO
+                       ======================================================== -->
+                  <div class="bclass-astro-pane" id="bclass-pane-bnote">
+                    <div id="bnote-card-mockup" style="position:relative;background:#ffffff;border-radius:16px;border:1px solid var(--bclass-border);box-shadow:0px 4px 16px rgba(0,0,0,0.06);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;">
+                      <div>
+                        <!-- BNote Navigation Header (ScreenWrapper & HeaderSpacer) -->
+                        <div style="padding:14px 20px;background:#ffffff;border-bottom:1px solid #eeeeee;display:flex;align-items:center;justify-content:space-between;gap:12px;">
+                          <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1;">
+                            <div style="width:32px;height:32px;border-radius:8px;background:var(--bclass-secondary);display:flex;align-items:center;justify-content:center;color:var(--bclass-primary);font-weight:700;font-size:14px;flex-shrink:0;">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                              </svg>
+                            </div>
+                            <div style="min-width:0;flex:1;">
+                              <span style="font-size:12px;font-weight:600;color:var(--bclass-text-muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Biochemistry • Semester 3</span>
+                              <span class="font-serif" style="font-size:13px;font-weight:700;color:#1c4587;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Hormones : Généralités et mécanismes d'action</span>
+                            </div>
+                          </div>
+
+                          <!-- BNoteState Verified Badge -->
+                          <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:8px;background:#e0f7e0;color:#37913c;font-size:12px;font-weight:600;flex-shrink:0;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Verified</span>
+                          </div>
+                        </div>
+
+                        <!-- BNote Content Area (matching BNoteElements.jsx & BNoteShowcase.astro) -->
+                        <div class="font-serif custom-scroll" style="padding:18px 20px;color:#333333;line-height:1.68;font-size:13.5px;height:400px;overflow-y:auto;">
+                          <!-- H1 Document Title -->
+                          <h3 class="font-serif" style="font-size:20px;font-weight:700;color:#1c4587;padding-bottom:8px;border-bottom:2px solid #1c4587;margin-bottom:14px;">
+                            Hormones : Généralités et mécanismes d'action
+                          </h3>
+
+                          <!-- H2 Section Title -->
+                          <h4 class="font-serif" style="font-size:16px;font-weight:700;color:#006400;padding-top:4px;margin-bottom:10px;">
+                            1. Introduction et Définition
+                          </h4>
+
+                          <!-- Blue Callout Box -->
+                          <div style="margin:14px 0;border-radius:8px;overflow:hidden;border:1px solid #eeeeee;">
+                            <div class="font-serif" style="background:#1c4587;padding:8px 16px;color:#ffffff;font-weight:700;font-size:12px;letter-spacing:0.04em;display:flex;align-items:center;justify-content:space-between;">
+                              <span>Qu'est-ce qu'une Hormone ?</span>
+                              <button type="button" id="open-bnote-ai-trigger" style="background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.35);color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;cursor:pointer;display:inline-flex;align-items:center;gap:4px;">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3z"/></svg>
+                                <span>Explain with B-Ai</span>
+                              </button>
+                            </div>
+                            <div style="padding:14px 16px;background:#f0f7ff;border-left:5px solid #1c4587;font-size:13.5px;line-height:1.65;">
+                              Ce sont des messagers chimiques sécrétés, en faible quantité, dans le sang, par une
+                              <span data-bnote-term="glande endocrine" style="background:#b3d7ff;color:#1c4587;font-weight:600;padding:2px 5px;border-radius:4px;cursor:pointer;" title="Click for BClass AI explanation">glande endocrine</span>, en réponse à un stimulus. Ce messager va agir sur les
+                              <span data-bnote-term="cellules cibles" style="background:#b3d7ff;color:#1c4587;font-weight:600;padding:2px 5px;border-radius:4px;cursor:pointer;" title="Click for BClass AI explanation">cellules cibles</span>
+                              dont il va modifier l'activité.
+                            </div>
+                          </div>
+
+                          <p style="line-height:1.68;padding:6px 0;">
+                            Les hormones sont des molécules informationnelles qui appartiennent à toutes les classes biochimiques (alcool, acides aminés, peptides, protéines, acides gras, stéroïdes, lipides complexes, nucléotides). Elles prennent l'information d'une cellule pour la transporter à une autre et induisent des mécanismes physiologiques ou physiopathologiques.
+                          </p>
+
+                          <!-- H3 Subheading -->
+                          <h4 class="font-serif" style="font-size:15px;font-weight:600;color:#006400;padding-top:8px;margin-bottom:6px;">
+                            Les Types de Communication Cellulaire
+                          </h4>
+
+                          <p style="line-height:1.68;margin-bottom:8px;">
+                            La communication intercellulaire se divise en deux grandes catégories :
+                          </p>
+
+                          <!-- Unified List Element (exact from BNoteShowcase.astro) -->
+                          <ul style="list-style:none;padding-left:6px;font-size:13.5px;display:flex;flex-direction:column;gap:8px;">
+                            <li style="display:flex;align-items:flex-start;gap:8px;">
+                              <span style="font-weight:700;color:#1c4587;">—</span>
+                              <span><strong>Communication à courte distance :</strong></span>
+                            </li>
+                            <li style="display:flex;align-items:flex-start;gap:8px;margin-left:14px;">
+                              <span style="font-weight:700;color:#800080;">•</span>
+                              <span>
+                                <strong>Système autocrine :</strong> La cellule libère un composé chimique qui va la stimuler elle-même. (Exemples :
+                                <span data-bnote-term="IGF" style="background:#faf0ff;color:#800080;font-weight:700;padding:2px 5px;border-radius:4px;cursor:pointer;">IGF</span>,
+                                <span data-bnote-term="monoxyde d'azote" style="background:#faf0ff;color:#800080;font-weight:700;padding:2px 5px;border-radius:4px;cursor:pointer;">monoxyde d'azote</span>).
+                              </span>
+                            </li>
+                            <li style="display:flex;align-items:flex-start;gap:8px;margin-left:14px;">
+                              <span style="font-weight:700;color:#800080;">•</span>
+                              <span>
+                                <strong>Système paracrine :</strong> L'hormone est libérée d'une cellule et agit sur une autre cellule adjacente dans le même tissu. (Exemples : la
+                                <span data-bnote-term="somatostatine" style="background:#faf0ff;color:#800080;font-weight:700;padding:2px 5px;border-radius:4px;cursor:pointer;">somatostatine</span>
+                                élaborée par les
+                                <span data-bnote-term="cellules δ" style="background:#b3d7ff;color:#1c4587;font-weight:600;padding:2px 5px;border-radius:4px;cursor:pointer;">cellules δ</span>
+                                agit sur les
+                                <span data-bnote-term="cellules α" style="background:#b3d7ff;color:#1c4587;font-weight:600;padding:2px 5px;border-radius:4px;cursor:pointer;">cellules α</span>
+                                ; les
+                                <span data-bnote-term="Prostaglandines" style="background:#faf0ff;color:#800080;font-weight:700;padding:2px 5px;border-radius:4px;cursor:pointer;">Prostaglandines</span>).
+                              </span>
+                            </li>
+                            <li style="display:flex;align-items:flex-start;gap:8px;">
+                              <span style="font-weight:700;color:#1c4587;">—</span>
+                              <span><strong>Communication à longue distance (système neuro-endocrinien) :</strong></span>
+                            </li>
+                            <li style="display:flex;align-items:flex-start;gap:8px;margin-left:14px;">
+                              <span style="font-weight:700;color:#800080;">•</span>
+                              <span>
+                                <strong>Le système endocrinien :</strong> Composé de glandes (ex :
+                                <span data-bnote-term="hypophyse" style="background:#b3d7ff;color:#1c4587;font-weight:600;padding:2px 5px;border-radius:4px;cursor:pointer;">hypophyse</span>,
+                                <span data-bnote-term="pancréas" style="background:#b3d7ff;color:#1c4587;font-weight:600;padding:2px 5px;border-radius:4px;cursor:pointer;">pancréas</span>,
+                                <span data-bnote-term="thyroïde" style="background:#b3d7ff;color:#1c4587;font-weight:600;padding:2px 5px;border-radius:4px;cursor:pointer;">thyroïde</span>) sécrétant des hormones transportées par le sang.
+                              </span>
+                            </li>
+                            <li style="display:flex;align-items:flex-start;gap:8px;margin-left:14px;">
+                              <span style="font-weight:700;color:#800080;">•</span>
+                              <span>
+                                <strong>Le système nerveux :</strong> L'influx électrique est transformé en information chimique. On distingue la
+                                <span data-bnote-term="Neurohormone" style="background:#faf0ff;color:#800080;font-weight:700;padding:2px 5px;border-radius:4px;cursor:pointer;">Neurohormone</span>
+                                (libérée dans le sang ou un muscle) et le
+                                <span data-bnote-term="Neuromédiateur" style="background:#faf0ff;color:#800080;font-weight:700;padding:2px 5px;border-radius:4px;cursor:pointer;">Neuromédiateur</span>
+                                (libéré vers un autre neurone).
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- BNote Footer Bar (ReadingProgress.jsx) -->
+                      <div style="padding:12px 20px;background:#f8f9fa;border-top:1px solid #eeeeee;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--bclass-text-muted);">
+                        <span style="font-weight:500;color:#276b2a;">Resumed at Section 3 of 8 · Click any highlighted term for B-AI</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                          <div style="width:96px;height:8px;background:#e0f7e0;border-radius:4px;overflow:hidden;">
+                            <div style="height:100%;width:67%;background:#37913c;"></div>
+                          </div>
+                          <span style="font-weight:700;color:#37913c;">67%</span>
+                        </div>
+                      </div>
+
+                      <!-- IN-CARD OVERLAY FOR BNOTE: BClass AI Overlay (exact from BNoteShowcase.astro) -->
+                      <div id="bnote-ai-overlay-backdrop" style="position:absolute;inset:0;background:rgba(0,0,0,0.2);z-index:40;display:none;opacity:0;transition:opacity 0.3s ease;"></div>
+
+                      <div id="bnote-ai-overlay" style="position:absolute;left:0;right:0;bottom:0;height:84%;background:#ffffff;z-index:50;border-radius:16px 16px 0 0;border-top:1px solid var(--bclass-border);box-shadow:0 -12px 32px rgba(0,0,0,0.18);transform:translateY(100%);transition:transform 0.3s ease-out;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;">
+                        <!-- Overlay Header Bar -->
+                        <div style="padding:14px 20px;background:var(--bclass-background);border-bottom:1px solid var(--bclass-border);display:flex;align-items:center;justify-content:space-between;position:relative;flex-shrink:0;">
+                          <div style="position:absolute;left:50%;top:8px;transform:translateX(-50%);width:32px;height:4px;background:#d1d5db;border-radius:2px;"></div>
+                          <div style="display:flex;align-items:center;gap:10px;margin-top:4px;">
+                            <div style="width:32px;height:32px;border-radius:8px;background:#e0f0ff;color:#1c4587;display:flex;align-items:center;justify-content:center;font-weight:700;">
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3z"/></svg>
+                            </div>
+                            <div>
+                              <div style="font-weight:700;font-size:13px;color:#1c4587;">BClass AI Assistant</div>
+                              <div style="font-size:11px;color:#276b2a;font-weight:600;display:flex;align-items:center;gap:4px;">
+                                <span style="width:6px;height:6px;border-radius:50%;background:#37913c;display:inline-block;"></span>
+                                20 messages left today
+                              </div>
+                            </div>
+                          </div>
+                          <button id="close-bnote-ai-overlay" type="button" style="padding:6px;color:#9ca3af;background:transparent;border:none;border-radius:6px;cursor:pointer;margin-top:4px;" aria-label="Close AI Overlay">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                              <line x1="18" y1="6" x2="6" y2="18"></line>
+                              <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                          </button>
+                        </div>
+
+                        <!-- Overlay Scrollable Body Content -->
+                        <div style="flex:1;overflow-y:auto;padding:16px;background:#fafafa;display:flex;flex-direction:column;gap:12px;">
+                          <div style="padding:10px;background:#f0f4f9;border-left:4px solid #1c4587;border-radius:8px;font-size:12px;">
+                            <span style="font-weight:900;color:#1c4587;display:block;text-transform:uppercase;letter-spacing:0.05em;font-size:9px;">SELECTION EXPLANATION</span>
+                            <p id="bnote-ai-selected-quote" style="font-weight:500;color:#374151;font-style:italic;font-size:11px;margin-top:2px;">"Glucagon, Cortisol"</p>
+                          </div>
+                          <div id="bnote-ai-typing-container" class="font-serif" style="background:#ffffff;padding:14px;border-radius:12px;border:1px solid #e5e7eb;font-size:13px;line-height:1.65;color:#1f2937;">
+                            <!-- Streamed word-by-word via main.js -->
+                          </div>
+                        </div>
+
+                        <!-- Overlay Footer Chat Input Bar -->
+                        <div style="padding:12px;background:#ffffff;border-top:1px solid #f3f4f6;flex-shrink:0;">
+                          <div style="display:flex;align-items:center;gap:8px;padding:8px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;">
+                            <input type="text" value="What is the role of cortisol in fasting?" readonly style="flex:1;background:transparent;border:none;font-size:12px;color:#1f2937;padding:0 8px;outline:none;">
+                            <button type="button" style="width:28px;height:28px;border-radius:8px;background:#1c4587;color:#ffffff;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;" aria-label="Send">
+                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ========================================================
+                       PANE 3: EXACT QuizShowcase.astro INHERITED FROM ASTRO
+                       ======================================================== -->
+                  <div class="bclass-astro-pane" id="bclass-pane-quiz">
+                    <div id="quiz-card-mockup" style="position:relative;background:#ffffff;border-radius:16px;border:1px solid var(--bclass-border);box-shadow:0 20px 45px rgba(0,0,0,0.08);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;">
+                      <div>
+                        <!-- Quiz Header -->
+                        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--bclass-background);border-bottom:1px solid var(--bclass-border);">
+                          <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1;">
+                            <div style="width:36px;height:36px;border-radius:8px;background:var(--bclass-primary);display:flex;align-items:center;justify-content:center;color:#ffffff;flex-shrink:0;">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                <circle cx="12" cy="12" r="10"></circle>
+                              </svg>
+                            </div>
+                            <div style="min-width:0;flex:1;">
+                              <div style="font-weight:700;font-size:13.5px;color:var(--bclass-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Les Hormones · Biochimie</div>
+                              <div style="font-size:11.5px;color:#6b7280;">Question 4 of 20</div>
+                            </div>
+                          </div>
+                          <div style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;background:#e0f0ff;color:var(--bclass-blue-dark);flex-shrink:0;">
+                            Quiz Preview
+                          </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div style="height:4px;background:#f3f4f6;">
+                          <div style="height:100%;width:20%;background:var(--bclass-primary);"></div>
+                        </div>
+
+                        <!-- Quiz Body -->
+                        <div style="padding:18px 20px;">
+                          <h3 style="font-weight:700;font-size:16px;margin-bottom:14px;color:var(--bclass-text);">
+                            Donner la réponse juste, la protéine Kinase A :
+                          </h3>
+
+                          <div id="astro-quiz-options" style="display:flex;flex-direction:column;gap:8px;">
+                            <!-- Option A (User Selected - WRONG / RED STATE) -->
+                            <div data-qopt="A" style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;border:2px solid #dc3545;background:#fff5f5;cursor:pointer;transition:all 0.2s;">
+                              <div class="qopt-badge" style="width:28px;height:28px;border-radius:50%;background:#dc3545;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#ffffff;flex-shrink:0;">A</div>
+                              <span class="qopt-label" style="font-size:13px;font-weight:700;color:#dc3545;">Phosphoryle de nombreuses protéines substrats sur un résidu tyrosine</span>
+                            </div>
+
+                            <!-- Option B -->
+                            <div data-qopt="B" style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;border:1px solid var(--bclass-border);background:#ffffff;cursor:pointer;transition:all 0.2s;">
+                              <div class="qopt-badge" style="width:28px;height:28px;border-radius:50%;border:2px solid var(--bclass-border);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#6b7280;flex-shrink:0;">B</div>
+                              <span class="qopt-label" style="font-size:13px;font-weight:500;color:var(--bclass-text);">La liaison d'AMPc a deux sites dans une s/u R masque la s/u Catalytique</span>
+                            </div>
+
+                            <!-- Option C -->
+                            <div data-qopt="C" style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;border:1px solid var(--bclass-border);background:#ffffff;cursor:pointer;transition:all 0.2s;">
+                              <div class="qopt-badge" style="width:28px;height:28px;border-radius:50%;border:2px solid var(--bclass-border);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#6b7280;flex-shrink:0;">C</div>
+                              <span class="qopt-label" style="font-size:13px;font-weight:500;color:var(--bclass-text);">Le Diacyl glycérol active certaines iso formes de la PKA</span>
+                            </div>
+
+                            <!-- Option D (Correct Answer - GREEN STATE) -->
+                            <div data-qopt="D" style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;border:2px solid #37913c;background:#f0fff0;cursor:pointer;transition:all 0.2s;">
+                              <div class="qopt-badge" style="width:28px;height:28px;border-radius:50%;background:#37913c;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#ffffff;flex-shrink:0;">D</div>
+                              <span class="qopt-label" style="font-size:13px;font-weight:700;color:#276b2a;">Les protéines histones et Facteurs de transcription comme CREB sont ses cibles.</span>
+                            </div>
+
+                            <!-- Option E -->
+                            <div data-qopt="E" style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;border:1px solid var(--bclass-border);background:#ffffff;cursor:pointer;transition:all 0.2s;">
+                              <div class="qopt-badge" style="width:28px;height:28px;border-radius:50%;border:2px solid var(--bclass-border);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#6b7280;flex-shrink:0;">E</div>
+                              <span class="qopt-label" style="font-size:13px;font-weight:500;color:var(--bclass-text);">Est constituée d'une sous-unité régulatrice et autre-unités catalytique</span>
+                            </div>
+                          </div>
+
+                          <!-- AI Explanation Box with Trigger (exact from QuizShowcase.astro) -->
+                          <div style="margin-top:16px;border-radius:12px;border:1px solid #aed6f1;background:#e0f0ff;padding:14px 16px;">
+                            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+                              <span style="font-weight:700;color:#1c4587;font-size:14px;">Explanation</span>
+                              <button id="open-card-ai-overlay" type="button" style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;background:#1c4587;color:#ffffff;font-size:11.5px;font-weight:700;border-radius:6px;border:none;cursor:pointer;transition:background 0.2s;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3z"></path>
+                                </svg>
+                                <span>Explain with B-Ai</span>
+                              </button>
+                            </div>
+
+                            <p style="font-size:13px;color:var(--bclass-text);line-height:1.55;">
+                              L'Option A est fausse : La PKA phosphoryle spécifiquement des résidus Sérine et Thréonine (pas Tyrosine). La vraie cible est CREB dans le noyau... <span style="font-weight:600;color:#1c4587;">(page 22)</span>
+                            </p>
+
+                            <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(174,214,241,0.6);display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                              <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#1c4587;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                                <span>Source: Les Hormones (Biochimie)</span>
+                              </div>
+                              <span style="padding:2px 10px;background:#e5e7eb;color:#4b5563;border-radius:4px;font-weight:600;font-size:11px;">Blida 2024</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- IN-CARD OVERLAY: BClass AI Explanation Overlay (exact from QuizShowcase.astro) -->
+                      <div id="ai-card-overlay-backdrop" style="position:absolute;inset:0;background:rgba(0,0,0,0.2);z-index:20;display:none;opacity:0;transition:opacity 0.3s ease;"></div>
+
+                      <div id="ai-card-overlay" style="position:absolute;left:0;right:0;bottom:0;height:84%;background:#ffffff;z-index:30;border-radius:16px 16px 0 0;border-top:1px solid var(--bclass-border);box-shadow:0 -12px 32px rgba(0,0,0,0.18);transform:translateY(100%);transition:transform 0.3s ease-out;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;">
+                        <!-- Overlay Header Bar -->
+                        <div style="padding:14px 20px;background:var(--bclass-background);border-bottom:1px solid var(--bclass-border);display:flex;align-items:center;justify-content:space-between;position:relative;flex-shrink:0;">
+                          <div style="position:absolute;left:50%;top:8px;transform:translateX(-50%);width:32px;height:4px;background:#d1d5db;border-radius:2px;"></div>
+                          <div style="display:flex;align-items:center;gap:10px;margin-top:4px;">
+                            <div style="width:32px;height:32px;border-radius:8px;background:#e0f0ff;color:#1c4587;display:flex;align-items:center;justify-content:center;font-weight:700;">
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3z"/></svg>
+                            </div>
+                            <div>
+                              <div style="font-weight:700;font-size:13px;color:#1c4587;">BClass AI Assistant</div>
+                              <div style="font-size:11px;color:#276b2a;font-weight:600;display:flex;align-items:center;gap:4px;">
+                                <span style="width:6px;height:6px;border-radius:50%;background:#37913c;display:inline-block;"></span>
+                                20 messages left today
+                              </div>
+                            </div>
+                          </div>
+                          <button id="close-card-ai-overlay" type="button" style="padding:6px;color:#9ca3af;background:transparent;border:none;border-radius:6px;cursor:pointer;margin-top:4px;" aria-label="Close AI Overlay">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                              <line x1="18" y1="6" x2="6" y2="18"></line>
+                              <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                          </button>
+                        </div>
+
+                        <!-- Overlay Scrollable Body Content -->
+                        <div style="flex:1;overflow-y:auto;padding:16px;background:#fafafa;display:flex;flex-direction:column;gap:12px;">
+                          <div style="padding:10px;background:#fff5f5;border-left:4px solid #dc3545;border-radius:8px;font-size:12px;">
+                            <span style="font-weight:900;color:#dc3545;display:block;text-transform:uppercase;letter-spacing:0.05em;font-size:9px;">SELECTION EXPLANATION</span>
+                            <p style="font-weight:500;color:#374151;font-style:italic;font-size:11px;margin-top:2px;">
+                              "Option A : Phosphoryle de nombreuses protéines substrats sur un résidu tyrosine"
+                            </p>
+                          </div>
+
+                          <div id="ai-typing-container" class="font-serif" style="background:#ffffff;padding:14px;border-radius:12px;border:1px solid #e5e7eb;font-size:13px;line-height:1.65;color:#1f2937;">
+                            <!-- Streamed word-by-word via main.js -->
+                          </div>
+                        </div>
+
+                        <!-- Overlay Footer Chat Input Bar -->
+                        <div style="padding:12px;background:#ffffff;border-top:1px solid #f3f4f6;flex-shrink:0;">
+                          <div style="display:flex;align-items:center;gap:8px;padding:8px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;">
+                            <input type="text" value="Why is option A incorrect?" readonly style="flex:1;background:transparent;border:none;font-size:12px;color:#1f2937;padding:0 8px;outline:none;">
+                            <button type="button" style="width:28px;height:28px;border-radius:8px;background:#1c4587;color:#ffffff;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;" aria-label="Send">
+                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ==============================================================
+               PROJECT 2: SANAD (TeleMed/sanad)
+               ============================================================== -->
+          <article class="project-block reveal" id="project-sanad">
+            <div class="project-header-bar">
+              <div class="project-title-row">
+                <div class="project-logo-box">
+                  <img src="assets/logos/sanad-logo.svg" alt="SANAD Monochrome Logo" class="app-logo-img">
+                </div>
+                <div>
+                  <span class="project-index">02 // National Emergency Tele-Expertise &amp; Case-Routing Infrastructure</span>
+                  <h3 class="project-name">SANAD — Closing the Emergency Care Divide</h3>
+                </div>
+              </div>
+              <span class="project-live-link" style="border-bottom-color:transparent;color:var(--text-muted);">
+                Urgences (Generalist) · Garde (Specialist) · Console
+              </span>
+            </div>
+
+            <!-- Architectural Guarantees Strip -->
+            <div class="metrics-strip">
+              <div class="metric-cell">
+                <span class="metric-value">Named Routing</span>
+                <span class="metric-label">Zero-Pool Dispatch</span>
+                <span class="metric-sub">Direct to a named on-call specialist</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">Guaranteed SLA</span>
+                <span class="metric-label">Auto-Escalation</span>
+                <span class="metric-sub">Auto-escalates to next specialist if missed</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">SHA-256 Chain</span>
+                <span class="metric-label">Tamper-Proof Log</span>
+                <span class="metric-sub">Append-only registry + daily Merkle root</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">X-Server-Time</span>
+                <span class="metric-label">Authoritative Clock</span>
+                <span class="metric-sub">Server SLA clock + HMAC patient privacy</span>
+              </div>
+            </div>
+
+            <div class="project-top-grid">
+              <!-- Left Column: SANAD Concise Vision & Architecture -->
+              <div class="project-info">
+                <p class="project-tagline">
+                  Connecting generalist doctors in rural or under-equipped hospitals with named on-call specialists — delivering fast, accountable emergency guidance when every minute counts.
+                </p>
+
+                <div class="project-modules-list">
+                  <div class="module-item">
+                    <div class="module-title">A. Minutes-to-Specialist</div>
+                    <div class="module-desc">Submit complex ECGs, vitals, or transfer dilemmas from a phone in minutes directly to a named on-call specialist.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">B. Guaranteed SLA &amp; Auto-Escalation</div>
+                    <div class="module-desc">Tracked against a fixed deadline that automatically escalates to the next specialist rank if unanswered.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">C. Unalterable Clinical Proof</div>
+                    <div class="module-desc">Every step is permanently recorded in an append-only, SHA-256 hash-chained registry that cannot be altered.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">D. Closing the Emergency Care Gap</div>
+                    <div class="module-desc">Putting specialist expertise within reach of every doctor, wherever they are, to make the right call at the right moment.</div>
+                  </div>
+                </div>
+
+                <div class="project-stack-line">
+                  <strong>Stack //</strong> TypeScript · PostgreSQL 16 (Append-Only Registry) · React 19 · React Native · Redis &amp; BullMQ
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive Light UI Embed of SANAD -->
+              <div class="ui-embed-frame" id="sanad-ui-frame">
+                <div class="ui-embed-chrome">
+                  <div class="chrome-dots">
+                    <span class="chrome-dot red"></span>
+                    <span class="chrome-dot amber"></span>
+                    <span class="chrome-dot green"></span>
+                  </div>
+                  <div class="chrome-url">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>garde.sanad.dz/v2 — Specialist Decision Shell</span>
+                  </div>
+                  <div class="chrome-tabs" role="tablist">
+                    <button class="chrome-tab active" data-sanad-tab="queue" type="button">File de Garde</button>
+                    <button class="chrome-tab" data-sanad-tab="case" type="button">Dossier &amp; Avis</button>
+                    <button class="chrome-tab" data-sanad-tab="registry" type="button">Preuve SHA-256</button>
+                  </div>
+                </div>
+
+                <!-- Scoped Light Mode SANAD App -->
+                <div class="sanad-embed">
+                  <!-- SANAD Topbar -->
+                  <div class="sanad-topbar">
+                    <div class="sanad-brand">
+                      <img src="assets/logos/sanad-icon.svg" alt="SANAD" style="width:22px;height:22px;border-radius:4px;object-fit:contain;">
+                      <span>SANAD Garde · Spécialiste Référent (CHU)</span>
+                    </div>
+                    <div class="sanad-server-clock">
+                      <span>●</span>
+                      <span id="sanad-live-clock">X-Server-Time: Synced</span>
+                    </div>
+                  </div>
+
+                  <!-- SANAD VIEW 1: FILE DE GARDE (QUEUE BOARD) -->
+                  <div class="sanad-view active" id="sanad-view-queue">
+                    <div class="sanad-queue-toolbar">
+                      <div>
+                        <div style="display:flex;align-items:center;gap:0.45rem;">
+                          <span style="font-size:0.95rem;font-weight:800;color:#1d2e5c;">Demandes d'avis — Urgences Rurales</span>
+                          <span id="sanad-queue-count" style="background:#1d2e5c;color:#fff;font-size:0.65rem;font-weight:800;padding:0.1rem 0.45rem;border-radius:3px;font-family:'Space Mono',monospace;">3</span>
+                        </div>
+                        <span style="font-size:0.66rem;color:#4a5679;">Routage nominatif avec délai SLA garanti et escalade automatique. Cliquez un cas pour guider le généraliste.</span>
+                      </div>
+                      <div class="sanad-filter-group" id="sanad-priority-filters">
+                        <button class="sanad-filter-btn active" data-sfilter="" type="button">Toutes</button>
+                        <button class="sanad-filter-btn" data-sfilter="CRITICAL" type="button">Critique</button>
+                        <button class="sanad-filter-btn" data-sfilter="URGENT" type="button">Urgent</button>
+                        <button class="sanad-filter-btn" data-sfilter="ROUTINE" type="button">Courant</button>
+                      </div>
+                    </div>
+
+                    <div id="sanad-queue-list" style="display:flex;flex-direction:column;gap:0.55rem;">
+                      <!-- Populated dynamically by main.js -->
+                    </div>
+                  </div>
+
+                  <!-- SANAD VIEW 2: DOSSIER PATIENT & DECISION FORM -->
+                  <div class="sanad-view" id="sanad-view-case">
+                    <!-- Sticky Case Header -->
+                    <div style="background:#ffffff;border:1px solid #dde1eb;border-radius:6px;padding:0.6rem 0.85rem;display:flex;align-items:center;justify-content:space-between;">
+                      <div>
+                        <div id="sanad-detail-motif" style="font-size:0.84rem;font-weight:800;color:#1d2e5c;">Douleur thoracique + ECG complexe · SANAD-2026-00412</div>
+                        <div id="sanad-detail-sub" style="font-size:0.7rem;color:#4a5679;">URGENT · Patient #3847 · 58 ans · M · Soumis par Médecin Généraliste (EPH Rural)</div>
+                      </div>
+                      <div style="text-align:right;">
+                        <span style="font-size:0.62rem;color:#4a5679;display:block;">Délai SLA garanti</span>
+                        <span id="sanad-detail-timer" style="font-family:'Space Mono',monospace;font-size:0.85rem;font-weight:800;color:#146c3a;background:#e7f8ee;padding:0.15rem 0.5rem;border-radius:4px;">24:52</span>
+                      </div>
+                    </div>
+
+                    <div class="sanad-case-grid">
+                      <!-- Left Column: Identity, Red Flags, Vitals & Generalist Intake -->
+                      <div style="display:flex;flex-direction:column;gap:0.65rem;">
+                        <div class="sanad-card">
+                          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+                            <div>
+                              <span style="font-family:'Space Mono',monospace;font-size:0.65rem;font-weight:700;color:#4a5679;">PSEUDONYME HMAC (SANS PII)</span>
+                              <div id="sanad-detail-patient" style="font-family:'Space Mono',monospace;font-size:1rem;font-weight:800;color:#1d2e5c;">Patient #3847</div>
+                            </div>
+                            <span class="sanad-priority-tag URGENT" id="sanad-detail-prio">URGENT</span>
+                          </div>
+
+                          <!-- Red Flags -->
+                          <div style="display:flex;flex-wrap:wrap;gap:0.35rem;margin-top:0.5rem;">
+                            <span style="background:#f9edec;border:1px solid #e2bcb7;color:#7a332c;font-size:0.63rem;font-weight:700;padding:0.15rem 0.45rem;border-radius:3px;">⚠ PA Systolique 155 mmHg</span>
+                            <span style="background:#f9edec;border:1px solid #e2bcb7;color:#7a332c;font-size:0.63rem;font-weight:700;padding:0.15rem 0.45rem;border-radius:3px;">⚠ SpO₂ 94%</span>
+                          </div>
+
+                          <!-- 4-Tile Vitals Grid -->
+                          <div class="sanad-vitals-grid">
+                            <div class="sanad-vital-tile critical">
+                              <span class="sanad-vital-label">PA Systolique</span>
+                              <span class="sanad-vital-val">155 <small style="font-weight:400;font-size:0.65rem;">mmHg</small></span>
+                            </div>
+                            <div class="sanad-vital-tile critical">
+                              <span class="sanad-vital-label">Fréq. Cardiaque</span>
+                              <span class="sanad-vital-val">98 <small style="font-weight:400;font-size:0.65rem;">bpm</small></span>
+                            </div>
+                            <div class="sanad-vital-tile critical">
+                              <span class="sanad-vital-label">SpO₂</span>
+                              <span class="sanad-vital-val">94 <small style="font-weight:400;font-size:0.65rem;">%</small></span>
+                            </div>
+                            <div class="sanad-vital-tile">
+                              <span class="sanad-vital-label">Température</span>
+                              <span class="sanad-vital-val">36.8 <small style="font-weight:400;font-size:0.65rem;">°C</small></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Generalist Question + ECG Strip -->
+                        <div class="sanad-card">
+                          <div style="font-size:0.68rem;font-weight:800;text-transform:uppercase;color:#4a5679;margin-bottom:0.35rem;">Question du Généraliste &amp; ECG 12D</div>
+                          <p style="font-size:0.73rem;color:#1d2e5c;line-height:1.45;margin-bottom:0.5rem;">
+                            <strong>Doute clinique :</strong> Douleur rétro-sternale serrante depuis 2h, ECG atypique. Faut-il évacuer en urgence vers le CHU (1h15 de route) ou stabiliser sur place ?
+                          </p>
+                          <!-- Scrim Black ECG Instrument View -->
+                          <div style="background:#000000;border-radius:4px;padding:0.45rem 0.6rem;display:flex;align-items:center;justify-content:space-between;">
+                            <svg width="180" height="32" viewBox="0 0 180 32" fill="none" stroke="#2fbf71" stroke-width="1.8">
+                              <polyline points="0,18 20,18 25,14 30,18 36,18 40,24 45,4 50,28 54,18 65,12 72,18 100,18 105,14 110,18 116,18 120,24 125,4 130,28 134,18 145,12 152,18 180,18"/>
+                            </svg>
+                            <span style="font-family:'Space Mono',monospace;font-size:0.6rem;color:#2fbf71;">ECG 12D · Q:0.92</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Right Column: Specialist's Signed Decision Form -->
+                      <div class="sanad-card" style="display:flex;flex-direction:column;justify-content:space-between;">
+                        <div>
+                          <div style="font-size:0.68rem;font-weight:800;text-transform:uppercase;color:#4a5679;margin-bottom:0.45rem;">Avis du Spécialiste (Orientation)</div>
+                          <div id="sanad-orientations">
+                            <button class="sanad-orientation-btn urgent selected" data-orient="TRANSFER_URGENT" type="button">
+                              <div style="font-size:0.76rem;font-weight:800;color:#7a332c;">Transfert urgent vers CHU (USIC)</div>
+                              <div style="font-size:0.65rem;color:#4a5679;">Évacuation médicalisée immédiate — salle de cathétérisme prévenue</div>
+                            </button>
+                            <button class="sanad-orientation-btn" data-orient="KEEP_ON_SITE" type="button">
+                              <div style="font-size:0.76rem;font-weight:700;color:#1d2e5c;">Garder et traiter sur place</div>
+                              <div style="font-size:0.65rem;color:#4a5679;">Éviter un transfert risqué ; protocole thérapeutique transmis</div>
+                            </button>
+                            <button class="sanad-orientation-btn" data-orient="SPECIALIST_CONSULT" type="button">
+                              <div style="font-size:0.76rem;font-weight:700;color:#1d2e5c;">Surveillance &amp; Nouveau contrôle ECG</div>
+                              <div style="font-size:0.65rem;color:#4a5679;">Répéter ECG + Troponine à H+1 avant décision de transfert</div>
+                            </button>
+                          </div>
+
+                          <div style="font-size:0.68rem;font-weight:800;text-transform:uppercase;color:#4a5679;margin:0.55rem 0 0.35rem;">Diagnostic Codé du Spécialiste</div>
+                          <div style="display:grid;grid-template-columns:1fr;gap:0.3rem;" id="sanad-diag-chips">
+                            <button type="button" class="sanad-diag-chip active" style="border:1px solid #1d2e5c;background:#1d2e5c;color:#fff;border-radius:4px;padding:0.32rem 0.6rem;font-size:0.7rem;font-weight:600;cursor:pointer;text-align:left;">SCA ST+ (Sus-décalage confirmé)</button>
+                            <button type="button" class="sanad-diag-chip" style="border:1px solid #dde1eb;background:#fff;color:#1d2e5c;border-radius:4px;padding:0.32rem 0.6rem;font-size:0.7rem;font-weight:600;cursor:pointer;text-align:left;">Angor instable à haut risque</button>
+                            <button type="button" class="sanad-diag-chip" style="border:1px solid #dde1eb;background:#fff;color:#1d2e5c;border-radius:4px;padding:0.32rem 0.6rem;font-size:0.7rem;font-weight:600;cursor:pointer;text-align:left;">Péricardite aiguë bénigne</button>
+                          </div>
+                        </div>
+
+                        <div style="margin-top:0.65rem;">
+                          <button class="sanad-submit-btn" id="sanad-sign-btn" type="button">
+                            Horodater &amp; Signer la décision (SHA-256)
+                          </button>
+                          <div id="sanad-sign-feedback" style="display:none;margin-top:0.4rem;padding:0.4rem 0.6rem;background:#e7f8ee;border:1px solid #2fbf71;border-radius:4px;font-size:0.66rem;color:#146c3a;font-weight:700;">
+                            ✓ Avis transmis au médecin généraliste &amp; scellé dans <code>case_events</code> (seq #4)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SANAD VIEW 3: APPEND-ONLY SHA-256 REGISTRY -->
+                  <div class="sanad-view" id="sanad-view-registry">
+                    <div class="sanad-card">
+                      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.6rem;">
+                        <div>
+                          <div style="font-size:0.84rem;font-weight:800;color:#1d2e5c;">Traçabilité inaltérable · SANAD-2026-00412</div>
+                          <div style="font-size:0.68rem;color:#4a5679;">Registre PostgreSQL append-only (<code>DO INSTEAD NOTHING</code> sur UPDATE/DELETE)</div>
+                        </div>
+                        <span style="background:#e7f8ee;color:#146c3a;border:1px solid #2fbf71;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.65rem;font-weight:800;">✓ Preuve Intacte</span>
+                      </div>
+
+                      <div id="sanad-registry-chain" style="display:flex;flex-direction:column;gap:0.45rem;font-family:'Space Mono',monospace;font-size:0.68rem;">
+                        <div style="padding:0.5rem 0.65rem;background:#f7f8fc;border:1px solid #dde1eb;border-radius:4px;">
+                          <div style="display:flex;justify-content:space-between;font-weight:700;color:#1d2e5c;">
+                            <span>seq #1 · CASE_SUBMITTED (Généraliste · EPH Rural)</span>
+                            <span>T+00:00.000</span>
+                          </div>
+                          <div style="color:#7a839e;font-size:0.6rem;margin-top:2px;">prev: 0000000000000000… · hash: 9f86d081884c7d659a2feaa0c55ad015</div>
+                        </div>
+                        <div style="padding:0.5rem 0.65rem;background:#f7f8fc;border:1px solid #dde1eb;border-radius:4px;">
+                          <div style="display:flex;justify-content:space-between;font-weight:700;color:#1d2e5c;">
+                            <span>seq #2 · ROUTED_TO_SPECIALIST (Rang 1 · Cardiologue CHU)</span>
+                            <span>T+00:00.142</span>
+                          </div>
+                          <div style="color:#7a839e;font-size:0.6rem;margin-top:2px;">prev: 9f86d081884c7d65… · hash: 4b227777d4dd1fc61c6f884f48641d02</div>
+                        </div>
+                        <div style="padding:0.5rem 0.65rem;background:#f7f8fc;border:1px solid #dde1eb;border-radius:4px;">
+                          <div style="display:flex;justify-content:space-between;font-weight:700;color:#1d2e5c;">
+                            <span>seq #3 · CASE_OPENED (Dr. Garde Cardiologie)</span>
+                            <span>T+01:18.405</span>
+                          </div>
+                          <div style="color:#7a839e;font-size:0.6rem;margin-top:2px;">prev: 4b227777d4dd1fc6… · hash: e3b0c44298fc1c149afbf4c8996fb924</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ==============================================================
+               PROJECT 3: TABIB DESKTOP (طبيب) — OFFLINE PRACTICE OS
+               ============================================================== -->
+          <article class="project-block reveal" id="project-tabib">
+            <div class="project-header-bar">
+              <div class="project-title-row">
+                <div class="project-logo-box">
+                  <img src="assets/logos/tabib-mark.png" alt="TABIB Monochrome Logo" class="app-logo-img">
+                </div>
+                <div>
+                  <span class="project-index">03 // Offline-First Desktop Medical Practice Management System</span>
+                  <h3 class="project-name">TABIB Desktop (طبيب) — Clinical Practice OS</h3>
+                </div>
+              </div>
+              <span class="project-live-link" style="border-bottom-color:transparent;color:var(--text-muted);">
+                Tauri 2 (Rust) · Doctor + Assistant LAN
+              </span>
+            </div>
+
+            <!-- Architectural Guarantees Strip -->
+            <div class="metrics-strip">
+              <div class="metric-cell">
+                <span class="metric-value">100% Offline</span>
+                <span class="metric-label">Local Data Sovereignty</span>
+                <span class="metric-sub">All patient records stay on the doctor's machine</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">LAN Sync</span>
+                <span class="metric-label">Doctor + Assistant</span>
+                <span class="metric-sub">Built-in Rust HTTP server for assistant queue &amp; admission</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">Ed25519 + AES</span>
+                <span class="metric-label">Machine-Bound License</span>
+                <span class="metric-sub">Hardware-fingerprinted (TBB-XXXX) concierge packages</span>
+              </div>
+              <div class="metric-cell">
+                <span class="metric-value">A5 Print Engine</span>
+                <span class="metric-label">DZ Drug Nomenclature</span>
+                <span class="metric-sub">Bilingual FR/AR ordonnances, bilans &amp; medical letters</span>
+              </div>
+            </div>
+
+            <div class="project-top-grid">
+              <!-- Left Column: TABIB Concise Overview -->
+              <div class="project-info">
+                <p class="project-tagline">
+                  Commercial offline-first desktop application built for Algerian medical cabinets (1 doctor + 1 assistant) — zero cloud dependency, instant local SQLite speed, and hardware-bound licensing.
+                </p>
+
+                <div class="project-modules-list">
+                  <div class="module-item">
+                    <div class="module-title">A. Triage Queue &amp; Assistant LAN Sync</div>
+                    <div class="module-desc">Embedded local HTTP server lets the assistant admit patients and manage live triage (<code>CRITIQUE</code>, <code>MOYEN</code>, <code>ROUTINE</code>) from any browser on the cabinet LAN.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">B. Consultation &amp; Algerian Nomenclature</div>
+                    <div class="module-desc">Full clinical workspace with Algerian drug registry (<code>meds-dz</code> brand + DCI search), posology memory, standard bilans, and referral letters.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">C. Precision A5 Ordonnance Printing</div>
+                    <div class="module-desc">Isolated print engine supporting bilingual headers (FR/AR) and custom pre-printed clinic stationery margin calibration.</div>
+                  </div>
+                  <div class="module-item">
+                    <div class="module-title">D. Ed25519 Concierge Licensing</div>
+                    <div class="module-desc">Asymmetric Ed25519 + AES-GCM <code>.tabib</code> activation files bound to hardware registry GUIDs that unlock the app and auto-configure the doctor's clinic profile.</div>
+                  </div>
+                </div>
+
+                <div class="project-stack-line">
+                  <strong>Stack //</strong> Tauri 2 · Rust · React 19 · TypeScript · SQLite · Zustand · WebCrypto Ed25519 / AES-GCM · Tailwind v4
+                </div>
+              </div>
+
+              <!-- Right Column: Inherited TABIB Desktop Interactive Light UI -->
+              <div class="ui-embed-frame" id="tabib-ui-frame">
+                <div class="ui-embed-chrome">
+                  <div class="chrome-dots">
+                    <span class="chrome-dot red"></span>
+                    <span class="chrome-dot amber"></span>
+                    <span class="chrome-dot green"></span>
+                  </div>
+                  <div class="chrome-url">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>tabib://desktop — Cabinet Médical El-Chifa</span>
+                  </div>
+                  <div class="chrome-tabs" role="tablist">
+                    <button class="chrome-tab active" data-tabib-tab="queue" type="button">Salle d'Attente</button>
+                    <button class="chrome-tab" data-tabib-tab="rx" type="button">Ordonnance A5</button>
+                    <button class="chrome-tab" data-tabib-tab="license" type="button">Licence Ed25519</button>
+                  </div>
+                </div>
+
+                <div class="tabib-embed">
+                  <!-- TABIB Desktop Header (from Header.tsx) -->
+                  <div class="tabib-topbar">
+                    <div style="display:flex;align-items:center;gap:0.5rem;">
+                      <img src="assets/logos/tabib-logo.png" alt="TABIB" style="width:24px;height:24px;border-radius:6px;object-fit:contain;">
+                      <span style="font-weight:800;font-size:0.84rem;color:#10193a;letter-spacing:0.5px;">TABIB <span style="color:#b8873b;">طبيب</span></span>
+                      <span style="font-size:0.65rem;padding:0.15rem 0.45rem;border-radius:9999px;background:#f3f4f8;color:#1d2e5c;font-weight:600;">SQLite Local</span>
+                    </div>
+
+                    <div style="display:flex;align-items:center;gap:0.55rem;">
+                      <div class="tabib-assistant-btn">
+                        <span>Appel Assistant</span>
+                        <span class="tabib-online-badge">
+                          <span style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block;"></span>
+                          <span>En ligne</span>
+                        </span>
+                      </div>
+
+                      <div style="display:flex;align-items:center;gap:0.45rem;border-left:1px solid rgba(16,25,58,0.1);padding-left:0.55rem;">
+                        <div style="text-align:right;line-height:1.15;">
+                          <div style="font-size:0.72rem;font-weight:700;color:#10193a;">Dr. Benali Mohamed</div>
+                          <div style="font-size:0.62rem;color:#8c93ad;">Médecine Générale</div>
+                        </div>
+                        <div style="width:28px;height:28px;border-radius:9999px;background:#10193a;color:#ffffff;font-size:0.68rem;font-weight:700;display:flex;align-items:center;justify-content:center;">
+                          BM
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- VIEW 1: SALLE D'ATTENTE & STATUT DU TRIAGE (from TriageStatusCard.tsx & PatientQueueCard.tsx) -->
+                  <div class="tabib-view active" id="tabib-view-queue">
+                    <div class="tabib-card">
+                      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.65rem;">
+                        <span style="font-size:0.82rem;font-weight:700;color:#10193a;">Statut du Triage (Cliquez pour filtrer)</span>
+                        <button type="button" id="tabib-reset-triage" style="display:none;background:none;border:none;font-size:0.7rem;font-weight:600;color:#3b6ea5;cursor:pointer;">
+                          Réinitialiser
+                        </button>
+                      </div>
+                      <div class="tabib-triage-grid" id="tabib-triage-filters">
+                        <button type="button" class="tabib-triage-btn critique" data-ttriage="CRITIQUE">
+                          <span style="font-size:1.45rem;font-weight:800;color:#a34b42;line-height:1;">1</span>
+                          <span style="margin-top:4px;font-size:0.62rem;font-weight:800;color:#10193a;letter-spacing:0.05em;">URGENT</span>
+                        </button>
+                        <button type="button" class="tabib-triage-btn moyen" data-ttriage="MOYEN">
+                          <span style="font-size:1.45rem;font-weight:800;color:#b8873b;line-height:1;">2</span>
+                          <span style="margin-top:4px;font-size:0.62rem;font-weight:800;color:#10193a;letter-spacing:0.05em;">EN ATTENTE</span>
+                        </button>
+                        <button type="button" class="tabib-triage-btn routine" data-ttriage="ROUTINE">
+                          <span style="font-size:1.45rem;font-weight:800;color:#3f7a5c;line-height:1;">2</span>
+                          <span style="margin-top:4px;font-size:0.62rem;font-weight:800;color:#10193a;letter-spacing:0.05em;">ROUTINE</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="tabib-card" style="flex:1;display:flex;flex-direction:column;">
+                      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.6rem;">
+                        <span style="font-size:0.84rem;font-weight:700;color:#10193a;">File d'attente des Patients</span>
+                        <span style="font-size:0.68rem;color:#8c93ad;">Cliquez sur un patient pour prescrire →</span>
+                      </div>
+
+                      <table style="width:100%;border-collapse:collapse;text-align:left;font-size:0.75rem;">
+                        <thead>
+                          <tr style="border-bottom:1px solid rgba(16,25,58,0.1);color:#8c93ad;font-size:0.62rem;text-transform:uppercase;letter-spacing:0.05em;">
+                            <th style="padding-bottom:0.45rem;">Patient</th>
+                            <th style="padding-bottom:0.45rem;">Heure</th>
+                            <th style="padding-bottom:0.45rem;">Motif</th>
+                            <th style="padding-bottom:0.45rem;text-align:center;">Triage</th>
+                            <th style="padding-bottom:0.45rem;text-align:right;">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tabib-queue-tbody">
+                          <!-- Populated dynamically by main.js -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <!-- VIEW 2: ORDONNANCE A5 & NOMENCLATURE DZ (from PrescriptionView.tsx) -->
+                  <div class="tabib-view" id="tabib-view-rx">
+                    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:0.75rem;flex:1;">
+                      <!-- Left: Algerian Drug Catalogue (meds-dz) -->
+                      <div class="tabib-card" style="display:flex;flex-direction:column;gap:0.55rem;">
+                        <div style="display:flex;justify-content:space-between;align-items:center;">
+                          <span style="font-size:0.76rem;font-weight:800;color:#10193a;text-transform:uppercase;letter-spacing:0.04em;">Nomenclature DZ (meds-dz)</span>
+                          <span style="font-size:0.64rem;color:#b8873b;font-weight:700;">+ Posologie</span>
+                        </div>
+                        <div id="tabib-drug-catalog" style="display:flex;flex-direction:column;gap:0.4rem;">
+                          <!-- Populated by main.js -->
+                        </div>
+                      </div>
+
+                      <!-- Right: Live A5 Ordonnance Preview -->
+                      <div class="tabib-card" style="border:1px solid #d5d9e6;display:flex;flex-direction:column;justify-content:space-between;background:#ffffff;">
+                        <div>
+                          <!-- Bilingual Clinic Header -->
+                          <div style="border-bottom:2px solid #10193a;padding-bottom:0.5rem;margin-bottom:0.55rem;display:flex;justify-content:space-between;align-items:flex-start;">
+                            <div>
+                              <div style="font-size:0.74rem;font-weight:800;color:#10193a;">Cabinet Médical El-Chifa</div>
+                              <div style="font-size:0.62rem;color:#4a5679;">Dr. Benali Mohamed · Médecine Générale</div>
+                              <div style="font-size:0.58rem;color:#8c93ad;">INPE: 16/1234/A · Alger</div>
+                            </div>
+                            <div style="text-align:right;">
+                              <div style="font-size:0.76rem;font-weight:800;color:#b8873b;">عيادة الشفاء الطبية</div>
+                              <div style="font-size:0.6rem;color:#8c93ad;">Format A5 · Isolé</div>
+                            </div>
+                          </div>
+
+                          <!-- Patient Line -->
+                          <div style="display:flex;justify-content:space-between;align-items:center;background:#f3f4f8;padding:0.35rem 0.55rem;border-radius:4px;margin-bottom:0.6rem;font-size:0.7rem;">
+                            <span>Patient: <strong id="tabib-rx-patient" style="color:#10193a;">Amine Khelifi (54 ans)</strong></span>
+                            <span style="font-size:0.62rem;color:#8c93ad;">Alger, le 09/11/2026</span>
+                          </div>
+
+                          <div style="text-align:center;font-size:0.75rem;font-weight:800;letter-spacing:0.12em;color:#10193a;margin-bottom:0.5rem;">
+                            ORDONNANCE
+                          </div>
+
+                          <!-- Prescribed Drugs List -->
+                          <div id="tabib-rx-list" style="display:flex;flex-direction:column;gap:0.45rem;max-height:210px;overflow-y:auto;">
+                            <!-- Populated by main.js -->
+                          </div>
+                        </div>
+
+                        <div style="border-top:1px solid rgba(16,25,58,0.08);padding-top:0.55rem;margin-top:0.55rem;display:flex;justify-content:space-between;align-items:center;">
+                          <span id="tabib-print-status" style="font-size:0.65rem;color:#3f7a5c;font-weight:700;">Prêt pour impression A5</span>
+                          <button type="button" id="tabib-print-btn" style="background:#10193a;color:#ffffff;border:none;border-radius:6px;padding:0.38rem 0.75rem;font-size:0.68rem;font-weight:700;cursor:pointer;">
+                            Imprimer A5 →
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- VIEW 3: LICENCE ED25519 & MACHINE FINGERPRINT (from LicenseView.tsx) -->
+                  <div class="tabib-view" id="tabib-view-license">
+                    <div class="tabib-card" style="background:#10193a;color:#ffffff;display:flex;justify-content:space-between;align-items:center;padding:0.9rem 1.1rem;">
+                      <div>
+                        <div style="font-size:0.62rem;text-transform:uppercase;letter-spacing:0.1em;color:#b8873b;font-weight:700;">Empreinte Matérielle (Windows Registry GUID + BIOS)</div>
+                        <div style="font-family:'Space Mono',monospace;font-size:1.05rem;font-weight:700;letter-spacing:1.5px;margin-top:2px;" id="tabib-machine-code">TBB-88A1-44C2-9901</div>
+                      </div>
+                      <button type="button" id="tabib-copy-code" style="background:rgba(184,135,59,0.2);border:1px solid #b8873b;color:#f3f4f8;padding:0.4rem 0.75rem;border-radius:6px;font-size:0.68rem;font-weight:700;cursor:pointer;">
+                        Copier Code
+                      </button>
+                    </div>
+
+                    <div class="tabib-card" style="display:flex;flex-direction:column;gap:0.55rem;">
+                      <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <span style="font-size:0.8rem;font-weight:800;color:#10193a;">État du Moteur Cryptographique Local</span>
+                        <span class="tabib-badge ROUTINE">LICENCE ACTIVÉE (À VIE)</span>
+                      </div>
+
+                      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.55rem;font-size:0.72rem;">
+                        <div style="background:#f3f4f8;padding:0.55rem 0.7rem;border-radius:6px;">
+                          <div style="font-size:0.62rem;color:#8c93ad;text-transform:uppercase;">Signature Asymétrique</div>
+                          <div style="font-weight:700;color:#10193a;margin-top:2px;">WebCrypto Ed25519 Vérifiée</div>
+                        </div>
+                        <div style="background:#f3f4f8;padding:0.55rem 0.7rem;border-radius:6px;">
+                          <div style="font-size:0.62rem;color:#8c93ad;text-transform:uppercase;">Stockage Disque</div>
+                          <div style="font-weight:700;color:#10193a;margin-top:2px;">AES-GCM (Lié au Poste)</div>
+                        </div>
+                        <div style="background:#f3f4f8;padding:0.55rem 0.7rem;border-radius:6px;">
+                          <div style="font-size:0.62rem;color:#8c93ad;text-transform:uppercase;">Protection Anti-Rollback</div>
+                          <div style="font-weight:700;color:#3f7a5c;margin-top:2px;">Horloge Intègre (lastSeenAt OK)</div>
+                        </div>
+                        <div style="background:#f3f4f8;padding:0.55rem 0.7rem;border-radius:6px;">
+                          <div style="font-size:0.62rem;color:#8c93ad;text-transform:uppercase;">Package Concierge (.tabib)</div>
+                          <div style="font-weight:700;color:#10193a;margin-top:2px;">Profil + Entête A5 Pré-chargés</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Secondary Ecosystem & Automation Projects -->
+        <div class="mini-projects-grid reveal">
+          <div class="mini-project-card">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
+                <span style="font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.5);">Telegram Automation</span>
+                <span style="font-size:0.7rem;color:rgba(255,255,255,0.35);letter-spacing:1px;">01</span>
+              </div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">BVoices Organizer</h4>
+              <p style="font-size:0.84rem;color:var(--text-secondary);">
+                Automated Telegram bot that indexes, tags, and organizes medical lecture voice notes by module, professor, and semester for rapid student playback.
+              </p>
+            </div>
+            <div class="project-stack-line" style="margin-top:0;padding-top:0.75rem;">
+              Python · Telegram Bot API · Audio Indexing
+            </div>
+          </div>
+
+          <div class="mini-project-card">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
+                <span style="font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.5);">Cohort Access Control</span>
+                <span style="font-size:0.7rem;color:rgba(255,255,255,0.35);letter-spacing:1px;">02</span>
+              </div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">BTelegram Gatekeeper</h4>
+              <p style="font-size:0.84rem;color:var(--text-secondary);">
+                Identity-verification bot that authenticates university students via institutional emails before issuing single-use private promotion channel invites.
+              </p>
+            </div>
+            <div class="project-stack-line" style="margin-top:0;padding-top:0.75rem;">
+              Python · SMTP Verification · Access Security
+            </div>
+          </div>
+
+          <div class="mini-project-card">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
+                <span style="font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.5);">Clinical Web Presence</span>
+                <span style="font-size:0.7rem;color:rgba(255,255,255,0.35);letter-spacing:1px;">03</span>
+              </div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">Dr. Benotsmane Portal</h4>
+              <p style="font-size:0.84rem;color:var(--text-secondary);">
+                Bespoke clinical showcase and patient orientation page designed for dental practice presentation with responsive layout and fast static delivery.
+              </p>
+            </div>
+            <div class="project-stack-line" style="margin-top:0;padding-top:0.75rem;">
+              HTML5 · CSS3 · JavaScript
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         LANGUAGES, FRAMEWORKS & SKILLS SHOWOFF GALLERY
+         ==================================================================== -->
     <section class="section" id="skills">
       <div class="section-content">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-icon">⚕️</div>
-            <h3 class="skill-title">Doctor in the making</h3>
-            <p class="skill-desc">Pharmacy student in Univeristy of Blida.</p>
+        <div class="section-header-block reveal">
+          <span class="section-eyebrow">02 // Arsenal &amp; Craft</span>
+          <h2 class="section-title">Skills &amp; Languages</h2>
+          <p class="section-subtitle">
+            Hover across the monochrome gallery to illuminate the languages, frameworks, cloud infrastructure, and creative tools behind my work.
+          </p>
+        </div>
+
+        <!-- Grayed-Out Logos Showoff Grid -->
+        <div class="logo-gallery-grid reveal" id="logo-gallery-grid">
+
+          <!-- Python -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(55, 118, 171, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" loading="lazy">
+            </div>
+            <span class="logo-name">Python</span>
+            <span class="logo-role">Backend · AI · OCR</span>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">🐍</div>
-            <h3 class="skill-title">Python Development</h3>
-            <p class="skill-desc">Experienced in Python programming with focus on data analysis, automation and web development.</p>
+
+          <!-- TypeScript -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(49, 120, 198, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy">
+            </div>
+            <span class="logo-name">TypeScript</span>
+            <span class="logo-role">Strict Full-Stack</span>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">🤖</div>
-            <h3 class="skill-title">Bot creation</h3>
-            <p class="skill-desc">Bot making in various platforms for automation and data handling.</p>
+
+          <!-- JavaScript -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(247, 223, 30, 0.4);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+            </div>
+            <span class="logo-name">JavaScript</span>
+            <span class="logo-role">ES6+ · Web Runtime</span>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">🌐</div>
-            <h3 class="skill-title">Web Development</h3>
-            <p class="skill-desc">Creating responsive, accessible, and modern web applications using Django.</p>
+
+          <!-- C++ -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(0, 89, 156, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy">
+            </div>
+            <span class="logo-name">C++</span>
+            <span class="logo-role">Systems &amp; Desktop</span>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">⚙️</div>
-            <h3 class="skill-title">C++ Programming</h3>
-            <p class="skill-desc">Developing high-performance applications using Qt-Framework.</p>
+
+          <!-- Django -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(68, 183, 139, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" loading="lazy" style="filter: brightness(2);">
+            </div>
+            <span class="logo-name">Django</span>
+            <span class="logo-role">BClass Core Engine</span>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">📱</div>
-            <h3 class="skill-title">React Native</h3>
-            <p class="skill-desc">Building cross-platform mobile applications with React Native for iOS and Android.</p>
+
+          <!-- React & React Native -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(97, 218, 251, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React & React Native" loading="lazy">
+            </div>
+            <span class="logo-name">React / Native</span>
+            <span class="logo-role">Web, iOS &amp; Android</span>
           </div>
-          <!--
-          <div class="skill-card">
-            <div class="skill-icon">🎨</div>
-            <h3 class="skill-title">Adobe Creative Suite</h3>
-            <p class="skill-desc">Manages in Illustrator and Photoshop for creating design assets and visual communications.</p>
+
+          <!-- Astro -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(255, 93, 1, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg" alt="Astro" loading="lazy">
+            </div>
+            <span class="logo-name">Astro</span>
+            <span class="logo-role">High-Speed Web</span>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">📸</div>
-            <h3 class="skill-title">Photography & Lightroom</h3>
-            <p class="skill-desc">Capturing and editing quality images with an eye for composition, lighting, and detail.</p>
+
+          <!-- Tauri & Rust -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(255, 193, 49, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tauri/tauri-original.svg" alt="Tauri & Rust" loading="lazy">
+            </div>
+            <span class="logo-name">Tauri &amp; Rust</span>
+            <span class="logo-role">Offline Desktop OS</span>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">📊</div>
-            <h3 class="skill-title">MS Office Suite</h3>
-            <p class="skill-desc">Advanced skills in Excel, Word, PowerPoint and Access for data analysis, documentation and presentations.</p>
+
+          <!-- Qt Framework -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(65, 205, 82, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg" alt="Qt Framework" loading="lazy">
+            </div>
+            <span class="logo-name">Qt Framework</span>
+            <span class="logo-role">Native C++ GUI</span>
           </div>
-          -->
-          <div class="skill-card">
-            <div class="skill-icon">✨</div>
-            <h3 class="skill-title">Ai Prompt Engineering</h3>
-            <p class="skill-desc">Skilled in Ai Prompt Engineering in various fields for precise responses in LLMs.</p>
+
+          <!-- Tailwind CSS -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(56, 189, 248, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" loading="lazy">
+            </div>
+            <span class="logo-name">Tailwind CSS</span>
+            <span class="logo-role">Token Design Systems</span>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(51, 103, 145, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy">
+            </div>
+            <span class="logo-name">PostgreSQL</span>
+            <span class="logo-role">Relational &amp; GiST</span>
+          </div>
+
+          <!-- SQLite -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(0, 59, 87, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite" loading="lazy">
+            </div>
+            <span class="logo-name">SQLite</span>
+            <span class="logo-role">Local Persistence</span>
+          </div>
+
+          <!-- Redis -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(216, 44, 32, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="Redis" loading="lazy">
+            </div>
+            <span class="logo-name">Redis &amp; BullMQ</span>
+            <span class="logo-role">SLA Queues &amp; Cache</span>
+          </div>
+
+          <!-- Cloudflare -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(243, 128, 32, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare R2" loading="lazy">
+            </div>
+            <span class="logo-name">Cloudflare R2</span>
+            <span class="logo-role">Edge &amp; Object Storage</span>
+          </div>
+
+          <!-- Docker -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(36, 150, 237, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
+            </div>
+            <span class="logo-name">Docker &amp; VPS</span>
+            <span class="logo-role">OVHcloud Deployment</span>
+          </div>
+
+          <!-- Git & Linux -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(240, 80, 50, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" loading="lazy">
+            </div>
+            <span class="logo-name">Git &amp; Linux</span>
+            <span class="logo-role">CI/CD &amp; Ops</span>
+          </div>
+
+          <!-- LaTeX -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(0, 128, 128, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" alt="LaTeX" loading="lazy" style="filter: invert(1);">
+            </div>
+            <span class="logo-name">LaTeX</span>
+            <span class="logo-role">Medical Typesetting</span>
+          </div>
+
+          <!-- Blender -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(245, 121, 42, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" alt="Blender" loading="lazy">
+            </div>
+            <span class="logo-name">Blender 3D</span>
+            <span class="logo-role">3D Modeling</span>
+          </div>
+
+          <!-- Adobe Creative Suite -->
+          <div class="logo-showcase-card" style="--brand-glow: rgba(255, 154, 0, 0.45);">
+            <div class="logo-svg-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="Adobe Creative Suite" loading="lazy">
+            </div>
+            <span class="logo-name">Adobe Suite</span>
+            <span class="logo-role">Ai · Ps · Lr · Ae</span>
+          </div>
+
+        </div>
+
+        <!-- Core Domain Pillars -->
+        <div class="pillars-grid reveal">
+          <div class="pillar-card">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);margin-bottom:0.75rem;">01 // Domain Expertise</div>
+            <h3 style="font-size:1.15rem;margin-bottom:0.5rem;">Doctor in the Making</h3>
+            <p style="font-size:0.86rem;color:var(--text-secondary);">
+              Pharmacy student at the University of Blida 1. Translating deep domain knowledge in pharmacology, biochemistry, and clinical workflows into software that serves thousands.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);margin-bottom:0.75rem;">02 // Systems Architecture</div>
+            <h3 style="font-size:1.15rem;margin-bottom:0.5rem;">Full-Stack &amp; Mobile Engineering</h3>
+            <p style="font-size:0.86rem;color:var(--text-secondary);">
+              Solo-architecting end-to-end production systems across Django, React / React Native, and PostgreSQL with &gt;96% unit gross margins and high daily retention.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);margin-bottom:0.75rem;">03 // Applied Intelligence</div>
+            <h3 style="font-size:1.15rem;margin-bottom:0.5rem;">Multimodal OCR &amp; AI Pipelines</h3>
+            <p style="font-size:0.86rem;color:var(--text-secondary);">
+              Engineering curriculum-aligned LLM synthesis, prompt caching, and automated asset extraction that convert raw university lectures into textbook-grade BNotes.
+            </p>
           </div>
         </div>
+
       </div>
     </section>
-<!--
-    <section class="section" id="portfolio">
-      <div class="section-content">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="gallery">
-          <div class="gallery-item">
-            <img src="https://fouadess04.github.io/drbenotsmane/pres_files/bg.jpg" alt="Dentist Portfolio" class="gallery-img">
-            <div class="gallery-overlay">
-              <h3>Portfolio page for Dr Benotsmane</h3>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/MePizza.png" alt="Web Development Project" class="gallery-img">
-            <div class="gallery-overlay">
-              <h3>Pizziria Management server</h3>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/blogo.png" alt="telegram bot" class="gallery-img">
-            <div class="gallery-overlay">
-              <h3>Voice notes organiser bot</h3>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/artboard.png" alt="Illustrator Design" class="gallery-img">
-            <div class="gallery-overlay">
-              <h3>Illustrations</h3>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/artboard2.png" alt="Photography" class="gallery-img">
-            <div class="gallery-overlay">
-              <h3>Some shots</h3>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/quiz.png" alt="Quiz maker" class="gallery-img">
-            <div class="gallery-overlay">
-              <h3>PharmaQuiz <i>(on the way)</i></h3>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/blogo.png" alt="Data Analysis" class="gallery-img">
-            <div class="gallery-overlay">
-              <h3>B-Classroom <i>(soon)</i></h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
--->
+
+    <!-- ====================================================================
+         CONTACT SECTION (UNIFIED SPLIT: CHANNELS + DIRECT MAIL FORM)
+         ==================================================================== -->
     <section class="section" id="contact">
-      
       <div class="section-content">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-grid">
-          <div class="contact-item">
-            <div class="contact-header">
-              <span class="contact-icon">💻</span>
-              <h3 class="contact-title">GitHub</h3>
-            </div>
-            <a href="https://github.com/fouadess04" target="_blank" class="contact-detail">github.com/fouadess04</a>
+        <div class="section-header-block reveal">
+          <span class="section-eyebrow">03 // Transmission</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            Interested in collaborating on healthcare technology, educational platforms, or full-stack engineering? Connect directly or send a transmission below.
+          </p>
+        </div>
+
+        <div class="contact-split-layout reveal">
+          <!-- Left Side: Unified Contact Channels -->
+          <div class="contact-channels-col">
+            <a href="https://github.com/fouadess04" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-header">
+                <div class="contact-header-left">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                  </span>
+                  <h3 class="contact-title">GitHub</h3>
+                </div>
+                <span class="contact-index-tag">01 // Code</span>
+              </div>
+              <span class="contact-detail">github.com/fouadess04 ↗</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/essaidi-fouad-b66b27276" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-header">
+                <div class="contact-header-left">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                  </span>
+                  <h3 class="contact-title">LinkedIn</h3>
+                </div>
+                <span class="contact-index-tag">02 // Network</span>
+              </div>
+              <span class="contact-detail">linkedin.com/in/essaidi-fouad-b66b27276 ↗</span>
+            </a>
+
+            <a href="mailto:bigovi@outlook.com" class="contact-item">
+              <div class="contact-header">
+                <div class="contact-header-left">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                  </span>
+                  <h3 class="contact-title">Email</h3>
+                </div>
+                <span class="contact-index-tag">03 // Direct</span>
+              </div>
+              <span class="contact-detail">bigovi@outlook.com ↗</span>
+            </a>
           </div>
-          <div class="contact-item">
-            <div class="contact-header">
-              <span class="contact-icon">✉️</span>
-              <h3 class="contact-title">Email</h3>
+
+          <!-- Right Side: Direct Mail Form -->
+          <form class="contact-form-card" id="contact-mail-form">
+            <div>
+              <div class="contact-form-header">
+                <h3 class="contact-form-title">Direct Mail Dispatch</h3>
+                <span class="contact-index-tag">To: bigovi@outlook.com</span>
+              </div>
+
+              <div class="contact-form-grid">
+                <div class="form-group no-margin">
+                  <label class="form-label" for="contact-name">Sender Name</label>
+                  <input class="form-input" id="contact-name" name="name" type="text" placeholder="Your name or organization" required>
+                </div>
+                <div class="form-group no-margin">
+                  <label class="form-label" for="contact-email">Reply-To Email</label>
+                  <input class="form-input" id="contact-email" name="email" type="email" placeholder="you@domain.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Subject</label>
+                <input class="form-input" id="contact-subject" name="subject" type="text" placeholder="Project inquiry / Collaboration / Engineering" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message Payload</label>
+                <textarea class="form-textarea" id="contact-message" name="message" placeholder="Write your message here..." required></textarea>
+              </div>
             </div>
-            <a href="mailto:bigovi@outlook.com" class="contact-detail">bigovi@outlook.com</a>
-          </div>
-          <div class="contact-item">
-            <div class="contact-header">
-              <span class="contact-icon">📱</span>
-              <h3 class="contact-title">Phone</h3>
+
+            <div class="form-submit-row">
+              <span class="form-status-msg" id="contact-form-status"></span>
+              <button class="form-submit-btn" type="submit">Send Mail →</button>
             </div>
-            <a href="tel:" class="contact-detail"><i>(Not available)</i></a>
-          </div>
-          <!--
-          <div class="contact-item">
-            <div class="contact-header">
-              <span class="contact-icon">📷</span>
-              <h3 class="contact-title">Instagram</h3>
-            </div>
-            <a href="https://instagram.com/bigovi_" target="_blank" class="contact-detail">@bigovi_</a>
-          </div>
-          -->
+          </form>
         </div>
       </div>
     </section>
 
-<style>
-  
-</style>
   </div>
 
+  <!-- FOOTER -->
   <footer>
     <div class="footer-links">
-      <a href="#about" class="footer-link">🐍</a>
-      <a href="#about" class="footer-link">👨‍💻</a>
-      <a href="#about" class="footer-link">🌐</a>
-      <a href="#about" class="footer-link">✨</a>
-      <a href="#about" class="footer-link">🤖</a>
-      <a href="#about" class="footer-link">⚙️</a>
-      <a href="#about" class="footer-link">🔬</a>
+      <a href="#about" class="footer-link">About</a>
+      <a href="#projects" class="footer-link">Projects</a>
+      <a href="#skills" class="footer-link">Skills</a>
+      <a href="#contact" class="footer-link">Contact</a>
+      <a href="https://github.com/fouadess04" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/essaidi-fouad-b66b27276" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
     </div>
-    <p class="footer-text">© 2025 | Essaidi Fouad</p>
+    <p class="footer-text">© 2026 | Essaidi Fouad</p>
   </footer>
 
   <script src="assets/main.js"></script>
