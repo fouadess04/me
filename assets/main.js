@@ -243,12 +243,12 @@ document.addEventListener('DOMContentLoaded', () => {
     marqueeEl.innerHTML = doubled
       .map(
         (c, idx) => `
-        <button type="button" data-marquee-course="${c.id}" data-idx="${idx}" style="
+        <button type="button" class="bclass-marquee-chip" data-marquee-course="${c.id}" data-idx="${idx}" style="
           display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1.1rem;
           border-radius:9999px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:transform 0.2s ease;flex-shrink:0;
           background-color:${c.theme.background};border:1px solid ${c.theme.border};color:${c.theme.primary};
         ">
-          <span style="width:10px;height:10px;border-radius:9999px;background-color:${c.theme.primary};"></span>
+          <span class="bclass-marquee-dot" style="width:10px;height:10px;border-radius:9999px;background-color:${c.theme.primary};"></span>
           <span>${c.title}</span>
         </button>
       `
@@ -288,7 +288,6 @@ document.addEventListener('DOMContentLoaded', () => {
       backBtn.style.display = 'none';
       titleEl.style.color = currentTheme.primary;
       titleEl.textContent = 'My Courses';
-      subEl.style.display = 'block';
       subEl.style.color = '#5a6b5d';
       subEl.textContent = 'BClass Interactive Demo';
       badgeEl.style.backgroundColor = currentTheme.secondary;
@@ -306,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
               box-shadow:0 4px 12px ${course.theme.primary}20;
             ">
               <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
-                <span style="font-weight:800;font-size:0.95rem;color:${course.theme.primary};">${course.title}</span>
+                <span class="course-card-title" style="font-weight:800;font-size:0.95rem;color:${course.theme.primary};">${course.title}</span>
                 <span class="mock-badge" style="background-color:${course.theme.secondary};color:${course.theme.primary};">
                   ${course.coursCount} cours
                 </span>
@@ -335,7 +334,6 @@ document.addEventListener('DOMContentLoaded', () => {
       backBtn.style.color = t.primary;
       titleEl.style.color = t.primary;
       titleEl.textContent = activeCourse.title;
-      subEl.style.display = 'block';
       subEl.style.color = '#5a6b5d';
       subEl.textContent = `${activeCourse.coursCount} modules`;
       badgeEl.style.backgroundColor = t.secondary;
@@ -345,9 +343,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       bodyEl.innerHTML =
         `
-        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px;font-weight:700;font-size:13px;margin-bottom:10px;color:${t.primary};">
+        <div class="material-list-head" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px;font-weight:700;font-size:13px;margin-bottom:10px;color:${t.primary};">
           <span>Cours</span>
-          <span style="font-size:11.5px;font-weight:400;">Click check box to cycle progress</span>
+          <span class="material-list-hint" style="font-size:11.5px;font-weight:400;">Click check box to cycle progress</span>
         </div>
         ` +
         activeCourse.materials
@@ -372,26 +370,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
             return `
               <div class="material-container" style="border-color:${t.border};">
-                <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px;">
-                  <span style="font-weight:700;color:#222222;font-size:13.5px;line-height:1.35;flex:1;">${mat.title}</span>
-                  <div style="display:flex;align-items:flex-start;gap:10px;flex-shrink:0;">
+                <div class="material-row-top" style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px;">
+                  <span class="material-title" style="font-weight:700;color:#222222;font-size:13.5px;line-height:1.35;flex:1;">${mat.title}</span>
+                  <div class="material-checks-group" style="display:flex;align-items:flex-start;gap:10px;flex-shrink:0;">
                     <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
                       <button type="button" class="check-btn" data-toggle-cours="${mat.id}" title="Course Read State" style="
                         border-color:${t.primary};
                         background-color:${readBg};
                       ">${readIcon}</button>
-                      <span style="font-size:9.5px;font-weight:700;color:${t.primary};line-height:1;">Cours</span>
+                      <span class="check-label" style="font-size:9.5px;font-weight:700;color:${t.primary};line-height:1;">Cours</span>
                     </div>
                     <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
                       <button type="button" class="check-btn" data-toggle-quiz="${mat.id}" title="Quiz Completed" style="
                         border-color:${t.primary};
                         background-color:${mat.quizChecked ? t.primary : 'transparent'};
                       ">${quizIcon}</button>
-                      <span style="font-size:9.5px;font-weight:700;color:${t.primary};line-height:1;">Quiz</span>
+                      <span class="check-label" style="font-size:9.5px;font-weight:700;color:${t.primary};line-height:1;">Quiz</span>
                     </div>
                   </div>
                 </div>
-                <div style="height:6px;background-color:#f3f4f6;border-radius:9999px;overflow:hidden;">
+                <div class="material-prog-bar" style="height:6px;background-color:#f3f4f6;border-radius:9999px;overflow:hidden;">
                   <div style="height:100%;width:${prog}%;background-color:${t.primary};border-radius:9999px;transition:width 0.3s ease;"></div>
                 </div>
               </div>
@@ -838,32 +836,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return `
           <div class="sanad-queue-row" data-open-case="${c.id}">
-            <div style="position:relative;width:46px;height:46px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="46" height="46" style="transform:rotate(-90deg);">
+            <div class="sanad-sla-ring" style="position:relative;width:46px;height:46px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="46" height="46" viewBox="0 0 46 46" style="transform:rotate(-90deg);width:100%;height:100%;">
                 <circle cx="23" cy="23" r="${r}" fill="none" stroke="#dde1eb" stroke-width="4"></circle>
                 <circle cx="23" cy="23" r="${r}" fill="none" stroke="${strokeColor}" stroke-width="4"
                   stroke-dasharray="${circ.toFixed(1)}" stroke-dashoffset="${offset.toFixed(1)}" stroke-linecap="round"></circle>
               </svg>
-              <span style="position:absolute;font-family:'Space Mono',monospace;font-size:0.62rem;font-weight:800;color:#1d2e5c;">
+              <span class="sanad-sla-time" style="position:absolute;font-family:'Space Mono',monospace;font-size:0.62rem;font-weight:800;color:#1d2e5c;">
                 ${formatSlaTime(c.remainingSec)}
               </span>
             </div>
 
             <div style="flex:1;min-width:0;">
-              <div style="display:flex;align-items:center;gap:0.45rem;margin-bottom:0.2rem;">
+              <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.2rem;">
                 <span class="sanad-priority-tag ${c.priority}">${c.priorityLabel}</span>
-                <span style="font-family:'Space Mono',monospace;font-size:0.65rem;font-weight:700;color:#4a5679;background:#f7f8fc;padding:0.1rem 0.4rem;border-radius:4px;">${c.ref}</span>
+                <span class="sanad-row-ref" style="font-family:'Space Mono',monospace;font-size:0.65rem;font-weight:700;color:#4a5679;background:#f7f8fc;padding:0.1rem 0.4rem;border-radius:4px;">${c.ref}</span>
               </div>
-              <div style="font-size:0.84rem;font-weight:800;color:#1d2e5c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+              <div class="sanad-row-motif" style="font-size:0.84rem;font-weight:800;color:#1d2e5c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
                 ${c.motif}
               </div>
-              <div style="font-size:0.71rem;color:#4a5679;">
+              <div class="sanad-row-meta" style="font-size:0.71rem;color:#4a5679;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
                 ${c.patientRef} · ${c.age} ans · ${c.sex} · <strong>${c.site}</strong>
               </div>
             </div>
 
-            <div style="font-size:0.72rem;font-weight:700;color:#1d2e5c;display:flex;align-items:center;gap:0.25rem;flex-shrink:0;">
-              <span>Ouvrir</span>
+            <div class="sanad-row-action" style="font-size:0.72rem;font-weight:700;color:#1d2e5c;display:flex;align-items:center;gap:0.25rem;flex-shrink:0;">
+              <span class="hide-mobile">Ouvrir</span>
               <span>→</span>
             </div>
           </div>
@@ -1106,23 +1104,23 @@ document.addEventListener('DOMContentLoaded', () => {
       .map(
         (p) => `
         <tr data-tabib-patient="${p.id}" style="border-bottom:1px solid rgba(16,25,58,0.08);cursor:pointer;transition:background 0.15s;">
-          <td style="padding:0.55rem 0.4rem 0.55rem 0;">
-            <div style="font-weight:700;color:#10193a;font-size:0.76rem;display:flex;align-items:center;gap:0.35rem;">
+          <td style="padding:0.5rem 0.35rem 0.5rem 0;">
+            <div class="tabib-pat-name" style="font-weight:700;color:#10193a;font-size:0.76rem;display:flex;align-items:center;flex-wrap:wrap;gap:0.3rem;">
               <span>${p.name}</span>
               ${
                 p.status
-                  ? `<span style="font-size:0.58rem;padding:0.1rem 0.35rem;border-radius:4px;border:1px solid rgba(59,110,165,0.3);background:rgba(59,110,165,0.1);color:#3b6ea5;text-transform:uppercase;font-weight:700;">${p.status}</span>`
+                  ? `<span class="hide-mobile" style="font-size:0.58rem;padding:0.1rem 0.35rem;border-radius:4px;border:1px solid rgba(59,110,165,0.3);background:rgba(59,110,165,0.1);color:#3b6ea5;text-transform:uppercase;font-weight:700;">${p.status}</span>`
                   : ''
               }
             </div>
-            <div style="font-size:0.64rem;color:#8c93ad;">ID: ${p.id} · ${p.age} ans</div>
+            <div class="tabib-pat-meta" style="font-size:0.64rem;color:#8c93ad;">${p.id} · ${p.age} ans</div>
           </td>
-          <td style="padding:0.55rem 0.35rem;color:#8c93ad;font-size:0.72rem;white-space:nowrap;">${p.arrivedAt}</td>
-          <td style="padding:0.55rem 0.35rem;color:#4a5679;font-size:0.72rem;">${p.motif}</td>
-          <td style="padding:0.55rem 0.35rem;text-align:center;">
+          <td class="hide-mobile" style="padding:0.5rem 0.35rem;color:#8c93ad;font-size:0.72rem;white-space:nowrap;">${p.arrivedAt}</td>
+          <td class="tabib-pat-motif" style="padding:0.5rem 0.35rem;color:#4a5679;font-size:0.72rem;">${p.motif}</td>
+          <td style="padding:0.5rem 0.25rem;text-align:center;">
             <span class="tabib-badge ${p.triage}">${p.triage}</span>
           </td>
-          <td style="padding:0.55rem 0 0.55rem 0.35rem;text-align:right;font-weight:700;color:#10193a;">→</td>
+          <td style="padding:0.5rem 0 0.5rem 0.25rem;text-align:right;font-weight:700;color:#10193a;">→</td>
         </tr>
       `
       )
